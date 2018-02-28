@@ -1,16 +1,12 @@
-# gulp-dot-precompiler
+# gulp-dot-precompiler3
 
-Better [Gulp](https://github.com/gulpjs/gulp) plugin for precompilation of [doT](https://github.com/olado/doT) templates. Forked from [titarenko/gulp-dotify](https://github.com/titarenko/gulp-dotify) but with more control and much more logical.
+Better [Gulp](https://github.com/gulpjs/gulp) plugin for precompilation of [doT](https://github.com/olado/doT) templates.<br>
+Forked from [kentliau/gulp-dot-precompiler](https://github/kentliau/gulp-dot-precompiler) (which in it's turn was forked from [titarenko/gulp-dotify](https://github.com/titarenko/gulp-dotify), "with more control and much more logical").
 
-## Status
+## Additions/changes from kentliau/gulp-dot-precompiler
 
-[![Build Status](https://secure.travis-ci.org/kentliau/gulp-dot-precompiler.png?branch=master)](https://travis-ci.org/kentliau/gulp-dot-precompiler)
-[![NPM version](https://badge.fury.io/js/gulp-dot-precompiler.png)](http://badge.fury.io/js/gulp-dot-precompiler)
-[![Coverage Status](https://coveralls.io/repos/kentliau/gulp-dot-precompiler/badge.png)](https://coveralls.io/r/kentliau/gulp-dot-precompiler)
-[![Dependecy Status](https://david-dm.org/kentliau/gulp-dot-precompiler.png)](https://david-dm.org/kentliau/gulp-dot-precompiler.png)
-
-
-[![NPM](https://nodei.co/npm/gulp-dot-precompiler.png?downloads=true&stars=true)](https://nodei.co/npm/gulp-dot-precompiler/)
+* Updated dependencies
+* Added possibility to use only filename as name (by setting separator to ''), i.e. no patch info
 
 
 ## Options
