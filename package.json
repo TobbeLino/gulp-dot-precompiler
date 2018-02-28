@@ -1,17 +1,17 @@
 {
-  "name": "gulp-dot-precompiler",
-  "version": "0.3.0",
+  "name": "gulp-dot-precompiler3",
+  "version": "0.3.1",
   "description": "Gulp plugins for precompilation of doT template engine.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive test -R spec -r should && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive test -R spec -r should"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentliau/gulp-dot-precompiler.git"
+    "url": "https://github.com/TobbeLino/gulp-dot-precompiler3.git"
   },
   "keywords": [
     "doT",
@@ -25,19 +25,20 @@
   "author": "Kent Liau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentliau/gulp-dot-precompiler/issues"
+    "url": "https://github.com/TobbeLino/gulp-dot-precompiler3/issues"
   },
-  "homepage": "https://github.com/kentliau/gulp-dot-precompiler",
+  "homepage": "https://github.com/TobbeLino/gulp-dot-precompiler3",
   "dependencies": {
-    "lodash": "~2.4.1",
-    "dot": "~1.0.2",
-    "through2": "~0.4.0",
-    "gulp-util": "~2.2.12"
+    "lodash": "~4.17.5",
+    "dot": "~1.1.2",
+    "through2": "~2.0.3",
+    "gulp-util": "~3.0.8"
   },
   "devDependencies": {
-    "mocha": "~1.17.0",
-    "should": "~3.0.1",
-    "istanbul": "~0.2.4",
-    "coveralls": "~2.6.1"
+    "coveralls": "~3.0.0",
+    "istanbul": "~0.4.5",
+    "mocha": "~5.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "should": "~13.2.1"
   }
 }
