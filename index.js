@@ -89,10 +89,10 @@ function gulpDotify(options) {
 
             var name = getTemplateName(options.root, trimmed_ext, options.extension, options.separator);
             var code = getTemplateCode(contents, options.templateSettings, defs);
-            if (typeof code !== "string") {
+            if (typeof code !== 'string') {
                 this.emit('error', new PluginError(PLUGIN_NAME, code));
             }
-            file.contents = new Buffer([options.dictionary, '["', name, '"] = ', code, ';'].join(''));
+            file.contents = new Buffer([options.dictionary, '[\'', name, '\'] = ', code, ';'].join(''));
 
             this.push(file);
             return callback();
