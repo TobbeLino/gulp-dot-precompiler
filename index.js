@@ -57,19 +57,21 @@ function gulpDotify(options) {
 
         //doT.js setting
         templateSettings: {
-            evaluate: /\{\{([\s\S]+?(\}?)+)\}\}/g,
+            evaluate:    /\{\{([\s\S]+?(\}?)+)\}\}/g,
             interpolate: /\{\{=([\s\S]+?)\}\}/g,
-            encode: /\{\{!([\s\S]+?)\}\}/g,
-            use: /\{\{#([\s\S]+?)\}\}/g,
-            useParams: /(^|[^\w$])def(?:\.|\[[\'\"])([\w$\.]+)(?:[\'\"]\])?\s*\:\s*([\w$\.]+|\"[^\"]+\"|\'[^\']+\'|\{[^\}]+\})/g,
-            define: /\{\{##\s*([\w\.$]+)\s*(\:|=)([\s\S]+?)#\}\}/g,
-            defineParams: /^\s*([\w$]+):([\s\S]+)/,
+            encode:      /\{\{!([\s\S]+?)\}\}/g,
+            use:         /\{\{#([\s\S]+?)\}\}/g,
+            useParams:   /(^|[^\w$])def(?:\.|\[[\'\"])([\w$\.]+)(?:[\'\"]\])?\s*\:\s*([\w$\.]+|\"[^\"]+\"|\'[^\']+\'|\{[^\}]+\})/g,
+            define:      /\{\{##\s*([\w\.$]+)\s*(\:|=)([\s\S]+?)#\}\}/g,
+            defineParams:/^\s*([\w$]+):([\s\S]+)/,
             conditional: /\{\{\?(\?)?\s*([\s\S]*?)\s*\}\}/g,
-            iterate: /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
-            varname: 'data',
-            strip: true,
-            append: true,
-            selfcontained: false
+            iterate:     /\{\{~\s*(?:\}\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\}\})/g,
+            varname:	"it",
+            strip:		true,
+            append:		true,
+            selfcontained: false,
+            doNotSkipEncoded: false,
+            globalEncodeHTMLFnName: false
         }
     });
 
