@@ -1,5 +1,5 @@
 var through = require('through2');
-var dot = require('dot');
+var dot = require('vergic-dot');
 var gutil = require('gulp-util');
 var _ = require('lodash');
 var path = require('path');
