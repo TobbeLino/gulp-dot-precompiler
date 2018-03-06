@@ -1,6 +1,6 @@
 {
   "name": "gulp-dot-precompiler3",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Gulp plugins for precompilation of doT template engine.",
   "main": "index.js",
   "directories": {
@@ -31,14 +31,14 @@
   "dependencies": {
     "lodash": "~4.17.5",
     "vergic-dot": "https://github.com/TobbeLino/vergic-doT/tarball/master?v=1.1.4",
-    "through2": "~2.0.3",
-    "gulp-util": "~3.0.8"
+    "through2": "~2.0.3"
   },
   "devDependencies": {
     "coveralls": "~3.0.0",
     "istanbul": "~0.4.5",
     "mocha": "~5.0.1",
     "mocha-lcov-reporter": "^1.3.0",
+    "plugin-error": "^1.0.1",
     "should": "~13.2.1"
   }
 }

@@ -1,9 +1,8 @@
 var through = require('through2');
 var dot = require('vergic-dot');
-var gutil = require('gulp-util');
 var _ = require('lodash');
 var path = require('path');
-var PluginError = gutil.PluginError;
+var PluginError = require('plugin-error');
 var fs = require('fs');
 var defs = {};
 
