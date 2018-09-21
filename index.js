@@ -6,7 +6,7 @@ var PluginError = require('plugin-error');
 var fs = require('fs');
 var defs = {};
 
-const PLUGIN_NAME = 'gulp-dot-precompiler';
+var PLUGIN_NAME = 'gulp-dot-precompiler';
 
 function getTemplateName(root, name, extension, separator) {
     if (separator === '') {
@@ -53,6 +53,7 @@ function gulpDotify(options) {
         separator: '.',
         extension: '',
         dictionary: 'render',
+        cacheDefs: false,
 
         //doT.js setting
         templateSettings: {
@@ -73,6 +74,13 @@ function gulpDotify(options) {
             globalEncodeHTMLFnName: false
         }
     });
+
+    if (!options.cacheDefs) {
+        // Clear defs on init (unless cacheDefs == true)
+        // This will force re-compilation of defined subtemplates on each run (e.g. when this task is ran by a watcher)
+        // Setting cacheDefs = true will mimic old behaviour, should we ever want that...
+        defs = {};
+    }
 
     var stream = through.obj(function (file, enc, callback) {
         var complete = function (error, contents) {

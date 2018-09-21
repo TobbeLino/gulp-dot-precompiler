@@ -7,6 +7,7 @@ Forked from [kentliau/gulp-dot-precompiler](https://github/kentliau/gulp-dot-pre
 
 * Updated dependencies
 * Added possibility to use only filename as name (by setting separator to ''), i.e. no patch info
+* Re-compile defs on every init by default.
 
 
 ## Options
