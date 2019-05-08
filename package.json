@@ -1,6 +1,7 @@
 {
   "name": "gulp-dot-precompiler3",
-  "version": "0.3.6",
+  "version": "0.3.7",
+  "private": true,
   "description": "Gulp plugins for precompilation of doT template engine.",
   "main": "index.js",
   "directories": {
